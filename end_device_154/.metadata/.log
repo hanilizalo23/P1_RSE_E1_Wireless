@@ -1,0 +1,807 @@
+!SESSION 2023-10-24 19:37:23.379 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2023-10-24 19:38:53.373
+!MESSAGE Recreating part support. No part support available.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2023-10-24 19:39:04.295
+!MESSAGE The device 'MK64FN1M0xxx12' (version='1.0.0') from SDK 'SDK_2.x_FRDM-K64F' (version='2.11.0', build='541 2022-01-14') will be installed.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2023-10-24 19:39:06.482
+!MESSAGE The device 'MK66FN2M0xxx18' (version='1.0.0') from SDK 'SDK_2.x_FRDM-K66F' (version='2.11.0', build='541 2022-01-14') will be installed.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2023-10-24 19:39:06.678
+!MESSAGE The device 'MKW41Z512xxx4' (version='1.0.0') from SDK 'SDK_2.x_FRDM-KW41Z' (version='2.2.3', build='') will be installed.
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-24 19:40:08.283
+!MESSAGE Indexed 'frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos' (0 sources, 0 headers) in 0.004 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY com.crt.log 1 0 2023-10-24 19:49:55.276
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2023-10-24 19:49:55.285
+!MESSAGE RedlinkServer telnet session connected on port 3025->64281 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2023-10-24 19:49:58.808
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY com.crt.utils 1 0 2023-10-24 19:50:16.469
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-24 19:50:16.879
+!MESSAGE Telnet session connected on port 2333->64407 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-26 20:14:51.308
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-26 20:14:51.911
+!MESSAGE Telnet session connected on port 2333->52884 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 11:13:54.560
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 11:13:55.094
+!MESSAGE Telnet session connected on port 2333->64741 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 11:48:18.530
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 11:48:19.104
+!MESSAGE Telnet session connected on port 2333->65095 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 11:53:36.958
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 11:53:37.486
+!MESSAGE Telnet session connected on port 2333->65138 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 12:05:03.135
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 12:05:03.669
+!MESSAGE Telnet session connected on port 2333->65196 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 13:34:36.480
+!MESSAGE Request for monitor: 'NOTHING_BEING_DEBUGGED' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 13:34:36.483
+!MESSAGE Request for monitor: 'NOTHING_BEING_DEBUGGED' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 13:34:36.484
+!MESSAGE Request for monitor: 'NOTHING_BEING_DEBUGGED' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 13:34:36.485
+!MESSAGE Request for monitor: 'NOTHING_BEING_DEBUGGED' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 13:34:36.487
+!MESSAGE Request for monitor: 'NOTHING_BEING_DEBUGGED' resulted in a rejected execution exception.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 13:34:36.488
+!MESSAGE Request for monitor: 'NOTHING_BEING_DEBUGGED' resulted in a rejected execution exception.
+
+!ENTRY com.crt.utils 1 0 2023-10-28 13:41:54.089
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 13:41:54.615
+!MESSAGE Telnet session connected on port 2333->49430 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:00:22.871
+!MESSAGE Telnet session connected on port 2333->49521 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:00:25.863
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:12:19.203
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:12:19.768
+!MESSAGE Telnet session connected on port 2333->49621 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:18:07.727
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:18:08.246
+!MESSAGE Telnet session connected on port 2333->49672 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:19:24.065
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:19:24.635
+!MESSAGE Telnet session connected on port 2333->49716 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:20:24.921
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:20:25.453
+!MESSAGE Telnet session connected on port 2333->49739 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:24:51.952
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:24:52.501
+!MESSAGE Telnet session connected on port 2333->49781 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:27:32.211
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:27:32.722
+!MESSAGE Telnet session connected on port 2333->49807 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:29:39.276
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:29:39.841
+!MESSAGE Telnet session connected on port 2333->49851 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:45:07.209
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:45:07.805
+!MESSAGE Telnet session connected on port 2333->49941 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:47:00.298
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIMemory$4@25bbddd3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-data-evaluate-expression &(0)
+Error message from debugger back end:
+Attempt to take address of value not located in memory. java.lang.Exception: Attempt to take address of value not located in memory.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:47:00.298
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression &(0)
+Error message from debugger back end:
+Attempt to take address of value not located in memory.
+!STACK 0
+java.lang.Exception: Attempt to take address of value not located in memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:49:51.953
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIMemory$4@17227631): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-data-evaluate-expression &((uint8_t*)&mExtendedAddress)
+Error message from debugger back end:
+Attempt to take address of value not located in memory. java.lang.Exception: Attempt to take address of value not located in memory.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:49:51.953
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression &((uint8_t*)&mExtendedAddress)
+Error message from debugger back end:
+Attempt to take address of value not located in memory.
+!STACK 0
+java.lang.Exception: Attempt to take address of value not located in memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:52:21.857
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:52:22.396
+!MESSAGE Telnet session connected on port 2333->49994 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 14:56:12.872
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 14:56:13.373
+!MESSAGE Telnet session connected on port 2333->50027 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:45.917
+!MESSAGE Request for monitor: '171^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:45.917
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:46.432
+!MESSAGE Request for monitor: '241^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:46.433
+!MESSAGE Failed to execute MI command:
+-data-read-memory-bytes 0x8f3f014 32
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:50.438
+!MESSAGE Request for monitor: '244^error,msg="Cannot access memory at address 0x8f3f034"' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:50.438
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression "(((struct tskTaskControlBlock *) 0x8f3efe0)->uxBasePriority)"
+Error message from debugger back end:
+Cannot access memory at address 0x8f3f034
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x8f3f034
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:50.454
+!MESSAGE Request for monitor: '245^error,msg="Cannot access memory at address 0x8f3f00c"' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:50.454
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression "(((struct tskTaskControlBlock *) 0x8f3efe0)->uxPriority)"
+Error message from debugger back end:
+Cannot access memory at address 0x8f3f00c
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x8f3f00c
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:50.533
+!MESSAGE Request for monitor: '250^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:50.533
+!MESSAGE Failed to execute MI command:
+-data-read-memory-bytes 0x8f3f014 32
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:54.530
+!MESSAGE Request for monitor: '251^error,msg="Cannot access memory at address 0x8f3f00c"' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:54.530
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression "(((struct tskTaskControlBlock *) 0x8f3efe0)->uxPriority)"
+Error message from debugger back end:
+Cannot access memory at address 0x8f3f00c
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x8f3f00c
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:54.607
+!MESSAGE Request for monitor: '257^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:54.607
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:55.288
+!MESSAGE Request for monitor: '300^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:55.288
+!MESSAGE Failed to execute MI command:
+-data-read-memory-bytes 0x8f3f014 32
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:59.288
+!MESSAGE Request for monitor: '301^error,msg="Cannot access memory at address 0x8f3f00c"' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:59.288
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression "(((struct tskTaskControlBlock *) 0x8f3efe0)->uxPriority)"
+Error message from debugger back end:
+Cannot access memory at address 0x8f3f00c
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x8f3f00c
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:57:59.368
+!MESSAGE Request for monitor: '306^error,msg="Unable to read memory."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:57:59.368
+!MESSAGE Failed to execute MI command:
+-data-read-memory-bytes 0x8f3f014 32
+Error message from debugger back end:
+Unable to read memory.
+!STACK 0
+java.lang.Exception: Unable to read memory.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:58:03.362
+!MESSAGE Request for monitor: '307^error,msg="Cannot access memory at address 0x8f3f00c"' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:58:03.363
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression "(((struct tskTaskControlBlock *) 0x8f3efe0)->uxPriority)"
+Error message from debugger back end:
+Cannot access memory at address 0x8f3f00c
+!STACK 0
+java.lang.Exception: Cannot access memory at address 0x8f3f00c
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:58:04.561
+!MESSAGE Request for monitor: '367^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:58:04.561
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 14:58:04.784
+!MESSAGE Request for monitor: '381^error,msg="There is no member named ulRunTimeCounter."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 14:58:04.784
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression "(((struct tskTaskControlBlock *) 0x20001440)->ulRunTimeCounter)"
+Error message from debugger back end:
+There is no member named ulRunTimeCounter.
+!STACK 0
+java.lang.Exception: There is no member named ulRunTimeCounter.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.325
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@6ce7ae1c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.325
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.328
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@36b2e357): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.328
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.332
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@67f43cd3): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.332
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.335
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@576b6e60): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.335
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.339
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@5ab78263): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.339
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.344
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@ea06c98): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.344
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.349
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@37550e6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.349
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:00:21.353
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@6328ffad): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:00:21.353
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.utils 1 0 2023-10-28 15:00:38.472
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 15:00:39.020
+!MESSAGE Telnet session connected on port 2333->50059 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-28 15:36:18.472
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 15:36:18.997
+!MESSAGE Telnet session connected on port 2333->50266 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:49.993
+!MESSAGE Request for monitor: '170^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:37:49.993
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.324
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@2c926c66): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.324
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.327
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@efa59b6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.327
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.329
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@26021b7f): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.329
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.335
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@55bcd00c): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.335
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.340
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@39b91ee2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.340
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.343
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@40ad93b7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.343
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.345
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@2d64b7d5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.345
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.352
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@1e6b3ec5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.352
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:37:50.354
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@6f547de4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:37:50.354
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.utils 1 0 2023-10-28 15:38:17.901
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 15:38:18.508
+!MESSAGE Telnet session connected on port 2333->50302 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.111
+!MESSAGE Request for monitor: '163^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:38:59.111
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.408
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@7be0737): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.408
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.413
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@5ad8cb83): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.413
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.416
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@412e6d33): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.416
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.421
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@5731e861): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.421
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.425
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@580918aa): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.425
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.428
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@2783edc8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.428
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.433
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@31029578): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.433
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.437
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@692811d9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.437
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.440
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@7974881e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.440
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.443
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@4121c755): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.443
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:38:59.447
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@e2fd7ff): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:38:59.447
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.utils 1 0 2023-10-28 15:40:04.906
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 15:40:05.398
+!MESSAGE Telnet session connected on port 2333->50324 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.223
+!MESSAGE Request for monitor: '165^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:41:06.223
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.568
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@5ac77a67): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.568
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.571
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@646670ad): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.572
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.574
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@3bb24656): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.574
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.579
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@6b3c7084): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.579
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.582
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@a2b78d2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.582
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.585
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@7f18c48b): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.586
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.590
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@409f8349): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.590
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.593
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@482f738e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.593
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:41:06.596
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@19136fb1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:41:06.597
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.utils 1 0 2023-10-28 15:44:38.089
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 15:44:38.619
+!MESSAGE Telnet session connected on port 2333->50361 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:10.831
+!MESSAGE Request for monitor: '168^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:46:10.831
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.193
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@713caad4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.193
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.197
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@2eb251be): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.197
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.199
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@59648238): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.200
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.204
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@4300f0bd): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.204
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.208
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@3298e32): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.208
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.211
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@73b4a676): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.211
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.216
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@1773eee5): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.216
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.220
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@53b261ae): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.220
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:46:11.223
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@1c253df4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:46:11.223
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.utils 1 0 2023-10-28 15:47:49.465
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 15:47:50.021
+!MESSAGE Telnet session connected on port 2333->50404 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:26.900
+!MESSAGE Request for monitor: '160^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:50:26.900
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.245
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@74c939b1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.245
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.249
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@6db3637): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.249
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.252
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@3565df4a): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.252
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.269
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@4acb3b36): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.269
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.273
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@6ec01553): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.273
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.277
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@229f4675): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.277
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.280
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@6fda2524): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.280
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.285
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@7cdbb162): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.285
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.289
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@12df5927): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.289
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:50:27.293
+!MESSAGE Request for monitor: 'RequestMonitor (com.nxp.mcuxpresso.tad.common.model.readers.VariableReader$1@4aab19e7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2023-10-28 15:50:27.293
+!MESSAGE Connection is shut down
+
+!ENTRY com.crt.utils 1 0 2023-10-28 15:51:14.155
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-28 15:51:14.740
+!MESSAGE Telnet session connected on port 2333->50459 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:53:01.694
+!MESSAGE Request for monitor: '169^error,msg="No symbol "ulTotalRunTime" in current context."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:53:01.694
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression ulTotalRunTime
+Error message from debugger back end:
+No symbol "ulTotalRunTime" in current context.
+!STACK 0
+java.lang.Exception: No symbol "ulTotalRunTime" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:53:01.932
+!MESSAGE Request for monitor: '184^error,msg="There is no member named ulRunTimeCounter."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:53:01.932
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression "(((struct tskTaskControlBlock *) 0x20001448)->ulRunTimeCounter)"
+Error message from debugger back end:
+There is no member named ulRunTimeCounter.
+!STACK 0
+java.lang.Exception: There is no member named ulRunTimeCounter.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:53:15.104
+!MESSAGE Request for monitor: '*running,thread-id="all"
+577^error,msg="Cannot execute this command while the target is running.\nUse the "interrupt" command to stop the target\nand then try again."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:53:15.104
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression pxReadyTasksLists[3].uxNumberOfItems
+Error message from debugger back end:
+Cannot execute this command while the target is running.
+Use the "interrupt" command to stop the target
+and then try again.
+!STACK 0
+java.lang.Exception: Cannot execute this command while the target is running.\nUse the "interrupt" command to stop the target\nand then try again.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:53:15.110
+!MESSAGE Request for monitor: '578^error,msg="Cannot execute this command while the target is running.\nUse the "interrupt" command to stop the target\nand then try again."' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:53:15.110
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression pxReadyTasksLists[4].uxNumberOfItems
+Error message from debugger back end:
+Cannot execute this command while the target is running.
+Use the "interrupt" command to stop the target
+and then try again.
+!STACK 0
+java.lang.Exception: Cannot execute this command while the target is running.\nUse the "interrupt" command to stop the target\nand then try again.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:54:23.176
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIMemory$4@2893718e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-data-evaluate-expression sizeof(mTimer_c_counter)
+Error message from debugger back end:
+Selected thread is running. java.lang.Exception: Selected thread is running.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:54:23.176
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(mTimer_c_counter)
+Error message from debugger back end:
+Selected thread is running.
+!STACK 0
+java.lang.Exception: Selected thread is running.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-28 15:54:23.178
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIMemory$4@298f8bbc): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-data-evaluate-expression sizeof(mTimer_c)
+Error message from debugger back end:
+Selected thread is running. java.lang.Exception: Selected thread is running.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-28 15:54:23.178
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression sizeof(mTimer_c)
+Error message from debugger back end:
+Selected thread is running.
+!STACK 0
+java.lang.Exception: Selected thread is running.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
