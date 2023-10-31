@@ -84,7 +84,7 @@ static uint8_t App_SendAssociateRequest(void);
 static uint8_t App_HandleAssociateConfirm(nwkMessage_t *pMsg);
 static uint8_t App_HandleMlmeInput(nwkMessage_t *pMsg);
 static void    App_HandleMcpsInput(mcpsToNwkMessage_t *pMsgIn);
-static void    App_TransmitUartData(void);
+static void    UartData(void);
 static void    AppPollWaitTimeout(void *);
 static void    App_HandleKeys( key_event_t events );
 
@@ -576,7 +576,8 @@ void AppThread(osaTaskParam_t argument)
                             OSA_EventSet(mAppEvent, gAppEvtDummyEvent_c); 
 
                             /////////////////////////////////////////////////////////////////////////////////////////
-                            TMR_StartSingleShotTimer(mTimer_c_counter, appTimeoutMs_counter, counter_increase, NULL);
+                            TMR_StartIntervalTimer(mTimer_c_counter, appTimeoutMs_counter, counter_increase, NULL);
+                            //TMR_StartSingleShotTimer(mTimer_c_counter, appTimeoutMs_counter, counter_increase, NULL);
                             //TMR_StartSecondTimer(mTimer_c_counter, tmrTimeInSeconds_counter, counter_increase, NULL);
                             mAppHandler_LEDS = OSA_TaskCreate(OSA_TASK(AppLEDS), NULL);
                             if( NULL == mAppHandler_LEDS )
@@ -684,7 +685,7 @@ void counter_increase (void *pData)
 	else
 		counter_timer = 0;
 
-	 Serial_PrintHex(interfaceId, &counter_timer, 1, gPrtHexNoFormat_c);
+	 //Serial_PrintHex(interfaceId, &counter_timer, 1, gPrtHexNoFormat_c);
 }
 
 void AppLEDS (void *pData)
@@ -692,26 +693,29 @@ void AppLEDS (void *pData)
 	/* Just to avoid the compiler warning */
 	(void)pData;
 
-	TurnOffLeds();
+	while(true)
+	{
+		TurnOffLeds();
 
-	if (counter_timer == 0)
-		Led2On();
-	else if (counter_timer == 1)
-		Led3On();
-	else if (counter_timer == 2)
-		Led4On();
-	else if (counter_timer == 3)
-	{
-		Led3On();
-		Led4On();
+		if (counter_timer == 0)
+			Led2On();
+		else if (counter_timer == 1)
+			Led3On();
+		else if (counter_timer == 2)
+			Led4On();
+		else if (counter_timer == 3)
+		{
+			Led3On();
+			Led4On();
+		}
+		else if (counter_timer == 4)
+		{
+			Led2On();
+			Led4On();
+		}
+		else if (counter_timer == 5)
+			TurnOnLeds();
 	}
-	else if (counter_timer == 4)
-	{
-		Led2On();
-		Led4On();
-	}
-	else if (counter_timer == 5)
-		TurnOnLeds();
 }
 
 /************************************************************************************
@@ -1250,26 +1254,11 @@ static void App_HandleKeys
         OSA_EventSet(mAppEvent, gAppEvtPressedRestoreNvmBut_c);
     case gKBD_EventLongSW2_c:
     case gKBD_EventLongSW3_c:
-    	OSA_EventSet(mAppEvent, gAppEvtPressedRestoreNvmBut_c);
     case gKBD_EventLongSW4_c:
     case gKBD_EventSW1_c:
     case gKBD_EventSW2_c:
     case gKBD_EventSW3_c:
-    	counter_timer = 1;
-        if(gState == stateInit)
-        {
-            LED_StopFlashingAllLeds();
-            OSA_EventSet(mAppEvent, gAppEvtDummyEvent_c);
-        }
-    break;
     case gKBD_EventSW4_c:
-    	counter_timer = 3;
-        if(gState == stateInit)
-        {
-            LED_StopFlashingAllLeds();
-            OSA_EventSet(mAppEvent, gAppEvtDummyEvent_c);
-        }
-    break;
 #if gTsiSupported_d
     case gKBD_EventSW5_c:
     case gKBD_EventSW6_c:
@@ -1278,6 +1267,11 @@ static void App_HandleKeys
     case gKBD_EventLongSW5_c:
     case gKBD_EventLongSW6_c:
 #endif
+        if(gState == stateInit)
+        {
+            LED_StopFlashingAllLeds();
+            OSA_EventSet(mAppEvent, gAppEvtDummyEvent_c);
+        }
     }
 #endif
 }

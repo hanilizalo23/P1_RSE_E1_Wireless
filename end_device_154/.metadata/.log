@@ -805,3 +805,69 @@ Selected thread is running.
 java.lang.Exception: Selected thread is running.
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)
+!SESSION 2023-10-30 22:10:25.028 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-10-30 22:11:01.102
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2023-10-31 15:24:52.842 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.crt.utils 1 0 2023-10-31 15:27:06.205
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-31 15:27:06.563
+!MESSAGE Telnet session connected on port 2333->59045 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-31 15:34:50.877
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-31 15:34:51.442
+!MESSAGE Telnet session connected on port 2333->59167 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-31 16:20:33.894
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-31 16:20:34.402
+!MESSAGE Telnet session connected on port 2333->59972 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-31 16:22:53.447
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-31 16:22:54.007
+!MESSAGE Telnet session connected on port 2333->60076 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-31 16:27:54.816
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-31 16:27:55.386
+!MESSAGE Telnet session connected on port 2333->60187 @ 127.0.0.1
+
+!ENTRY com.crt.utils 1 0 2023-10-31 16:49:33.218
+!MESSAGE Connected to 127.0.0.1 on port 2332.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2023-10-31 16:49:33.754
+!MESSAGE Telnet session connected on port 2333->60607 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2023-10-31 17:18:52.964
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIMemory$4@3ea5e902): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-data-evaluate-expression &(events)
+Error message from debugger back end:
+No symbol "events" in current context. java.lang.Exception: No symbol "events" in current context.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2023-10-31 17:18:52.964
+!MESSAGE Failed to execute MI command:
+-data-evaluate-expression &(events)
+Error message from debugger back end:
+No symbol "events" in current context.
+!STACK 0
+java.lang.Exception: No symbol "events" in current context.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1013)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:842)

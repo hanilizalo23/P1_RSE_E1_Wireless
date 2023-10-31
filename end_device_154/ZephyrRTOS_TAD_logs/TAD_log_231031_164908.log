@@ -1,0 +1,6 @@
+"Task Aware Debugger for GDB" version 11.6.0 (202206271353)
+(c) 2016-2022 NXP Semiconductors, Inc.
+==================================
+16:48:56.853 INFO: [ZephyrRTOS] D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\Debug\.config file could not be read
+16:48:56.854 INFO: [TadModel] DSF session ID 10 has started.
+16:49:08.439 INFO: [TadModel] DSF session ID 10 has ended.
