@@ -84,7 +84,8 @@ static uint8_t App_SendAssociateRequest(void);
 static uint8_t App_HandleAssociateConfirm(nwkMessage_t *pMsg);
 static uint8_t App_HandleMlmeInput(nwkMessage_t *pMsg);
 static void    App_HandleMcpsInput(mcpsToNwkMessage_t *pMsgIn);
-static void    UartData(void);
+static void    App_TransmitUartData(void);
+void App_TransmitUartData_ctr_t (char counter_timer);
 static void    AppPollWaitTimeout(void *);
 static void    App_HandleKeys( key_event_t events );
 
@@ -1259,6 +1260,14 @@ static void App_HandleKeys
     case gKBD_EventSW2_c:
     case gKBD_EventSW3_c:
     case gKBD_EventSW4_c:
+    	if (events == 1)
+    	{
+    		counter_timer = 1;
+    	}
+    	else if (events == 2)
+    	{
+    		counter_timer = 3;
+    	}
 #if gTsiSupported_d
     case gKBD_EventSW5_c:
     case gKBD_EventSW6_c:
@@ -1296,4 +1305,56 @@ resultType_t MCPS_NWK_SapHandler (mcpsToNwkMessage_t* pMsg, instanceId_t instanc
   MSG_Queue(&mMcpsNwkInputQueue, pMsg);
   OSA_EventSet(mAppEvent, gAppEvtMessageFromMCPS_c);
   return gSuccess_c;
+}
+
+void App_TransmitUartData_ctr_t (char counter_timer)
+{
+    /* Use multi buffering for increased TX performance. It does not really
+    have any effect at low UART baud rates, but serves as an
+    example of how the throughput may be improved in a real-world
+    application where the data rate is of concern. */
+    if( (mcPendingPackets < mDefaultValueOfMaxPendingDataPackets_c) && (mpPacket == NULL) )
+    {
+        /* If the maximum number of pending data buffes is below maximum limit
+        and we do not have a data buffer already then allocate one. */
+        mpPacket = MSG_Alloc(sizeof(nwkToMcpsMessage_t) + gMaxPHYPacketSize_c);
+    }
+
+    char message[3] = "\r\n";
+    counter_timer+='0';
+    strcat(message, &counter_timer);
+
+    if(mpPacket != NULL)
+    {
+        /* Data is available in the SerialManager's receive buffer. Now create an
+        MCPS-Data Request message containing the data. */
+        mpPacket->msgType = gMcpsDataReq_c;
+        mpPacket->msgData.dataReq.pMsdu = (uint8_t*)(&mpPacket->msgData.dataReq.pMsdu) +
+                                          sizeof(mpPacket->msgData.dataReq.pMsdu);
+        mpPacket->msgData.dataReq.pMsdu = (uint8_t*)message;
+        /* Create the header using coordinator information gained during
+        the scan procedure. Also use the short address we were assigned
+        by the coordinator during association. */
+        FLib_MemCpy(&mpPacket->msgData.dataReq.dstAddr, &mCoordInfo.coordAddress, 8);
+        FLib_MemCpy(&mpPacket->msgData.dataReq.srcAddr, &maMyAddress, 8);
+        FLib_MemCpy(&mpPacket->msgData.dataReq.dstPanId, &mCoordInfo.coordPanId, 2);
+        FLib_MemCpy(&mpPacket->msgData.dataReq.srcPanId, &mCoordInfo.coordPanId, 2);
+        mpPacket->msgData.dataReq.dstAddrMode = mCoordInfo.coordAddrMode;
+        mpPacket->msgData.dataReq.srcAddrMode = mAddrMode;
+        mpPacket->msgData.dataReq.msduLength = 3; //dataLenght
+        /* Request MAC level acknowledgement of the data packet */
+        mpPacket->msgData.dataReq.txOptions = gMacTxOptionsAck_c;
+        /* Give the data packet a handle. The handle is
+        returned in the MCPS-Data Confirm message. */
+        mpPacket->msgData.dataReq.msduHandle = mMsduHandle++;
+        /* Don't use security */
+        mpPacket->msgData.dataReq.securityLevel = gMacSecurityNone_c;
+
+        /* Send the Data Request to the MCPS */
+        (void)NWK_MCPS_SapHandler(mpPacket, macInstance);
+
+        /* Prepare for another data buffer */
+        mpPacket = NULL;
+        mcPendingPackets++;
+    }
 }

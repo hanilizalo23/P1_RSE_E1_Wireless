@@ -1770,3 +1770,584 @@ arm-none-eabi-size "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_fre
    text	   data	    bss	    dec	    hex	filename
  128968	   9759	  18928	 157655	  267d7	frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
  
+22:04:05 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'AppThread':
+../source/mwa_end_device.c:450:51: warning: unsigned conversion from 'int' to 'pibId_t' {aka 'unsigned char'} changes value from '257' to '1' [-Woverflow]
+  450 |                 msg.msgData.setReq.pibAttribute = gMPibPanId_c;
+      |                                                   ^~~~~~~~~~~~
+../source/mwa_end_device.c:623:17: warning: implicit declaration of function 'App_TransmitUartData' [-Wimplicit-function-declaration]
+  623 |                 App_TransmitUartData();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c: At top level:
+../source/mwa_end_device.c:1123:13: warning: conflicting types for 'App_TransmitUartData'
+ 1123 | static void App_TransmitUartData(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:1123:13: error: static declaration of 'App_TransmitUartData' follows non-static declaration
+../source/mwa_end_device.c:623:17: note: previous implicit declaration of 'App_TransmitUartData' was here
+  623 |                 App_TransmitUartData();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:87:16: warning: 'UartData' declared 'static' but never defined [-Wunused-function]
+   87 | static void    UartData(void);
+      |                ^~~~~~~~
+../source/mwa_end_device.c:1123:13: warning: 'App_TransmitUartData' defined but not used [-Wunused-function]
+ 1123 | static void App_TransmitUartData(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+make[1]: *** [source/subdir.mk:26: source/mwa_end_device.o] Error 1
+make: *** [makefile:70: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+22:05:09 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'AppThread':
+../source/mwa_end_device.c:450:51: warning: unsigned conversion from 'int' to 'pibId_t' {aka 'unsigned char'} changes value from '257' to '1' [-Woverflow]
+  450 |                 msg.msgData.setReq.pibAttribute = gMPibPanId_c;
+      |                                                   ^~~~~~~~~~~~
+../source/mwa_end_device.c:623:17: warning: implicit declaration of function 'App_TransmitUartData' [-Wimplicit-function-declaration]
+  623 |                 App_TransmitUartData();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c: At top level:
+../source/mwa_end_device.c:1123:13: warning: conflicting types for 'App_TransmitUartData'
+ 1123 | static void App_TransmitUartData(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:1123:13: error: static declaration of 'App_TransmitUartData' follows non-static declaration
+../source/mwa_end_device.c:623:17: note: previous implicit declaration of 'App_TransmitUartData' was here
+  623 |                 App_TransmitUartData();
+      |                 ^~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:87:16: warning: 'UartData' declared 'static' but never defined [-Wunused-function]
+   87 | static void    UartData(void);
+      |                ^~~~~~~~
+../source/mwa_end_device.c:1123:13: warning: 'App_TransmitUartData' defined but not used [-Wunused-function]
+ 1123 | static void App_TransmitUartData(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+make[1]: *** [source/subdir.mk:26: source/mwa_end_device.o] Error 1
+make: *** [makefile:70: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+22:06:30 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'AppThread':
+../source/mwa_end_device.c:450:51: warning: unsigned conversion from 'int' to 'pibId_t' {aka 'unsigned char'} changes value from '257' to '1' [-Woverflow]
+  450 |                 msg.msgData.setReq.pibAttribute = gMPibPanId_c;
+      |                                                   ^~~~~~~~~~~~
+Finished building: ../source/mwa_end_device.c
+ 
+Building target: frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -L"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\libs" -Xlinker -Map="frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T MKW41Z512xxx4_connectivity.ld -L ../source -o "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf" ./utilities/fsl_debug_console.o  ./startup/startup_MKW41Z4.o  ./source/mtb.o ./source/mwa_end_device.o ./source/semihost_hardfault.o  ./ieee_802.15.4/phy/source/MKW41Z/ASP.o ./ieee_802.15.4/phy/source/MKW41Z/MPM.o ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o  ./ieee_802.15.4/mac/source/App/FsciAspCommands.o ./ieee_802.15.4/mac/source/App/FsciMacCommands.o ./ieee_802.15.4/mac/source/App/MacGlobals.o  ./freertos/croutine.o ./freertos/event_groups.o ./freertos/fsl_tickless_lptmr.o ./freertos/fsl_tickless_systick.o ./freertos/heap_4.o ./freertos/list.o ./freertos/port.o ./freertos/queue.o ./freertos/tasks.o ./freertos/timers.o  ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ant_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ble_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_common_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p3_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p32_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p7_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_1p0_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p7_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_mode_datarate_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_msk_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_zgbe_config.o  ./framework/XCVR/MKW41Z4/dbg_ram_capture.o ./framework/XCVR/MKW41Z4/fsl_xcvr.o ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o ./framework/XCVR/MKW41Z4/ifr_radio.o  ./framework/TimersManager/Source/TMR_Adapter.o ./framework/TimersManager/Source/TimersManager.o  ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o  ./framework/SerialManager/Source/SPI_Adapter/SPI_Adapter.o  ./framework/SerialManager/Source/I2C_Adapter/I2C_Adapter.o  ./framework/SerialManager/Source/SerialManager.o  ./framework/SecLib/SecLib.o  ./framework/Reset/Reset.o  ./framework/RNG/Source/RNG.o  ./framework/Panic/Source/Panic.o  ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o  ./framework/NVM/Source/NV_Flash.o ./framework/NVM/Source/NV_FsciCommands.o  ./framework/ModuleInfo/ModuleInfo.o  ./framework/Messaging/Source/Messaging.o  ./framework/MemManager/Source/MemManager.o  ./framework/MWSCoexistence/Source/MWS.o  ./framework/LowPower/Source/MKW41Z/PWR.o ./framework/LowPower/Source/MKW41Z/PWRLib.o  ./framework/Lists/GenericList.o  ./framework/LED/Source/LED.o  ./framework/Keyboard/Source/Keyboard.o  ./framework/GPIO/GPIO_Adapter.o  ./framework/FunctionLib/FunctionLib.o  ./framework/Flash/Internal/Flash_Adapter.o  ./framework/DCDC/Source/DCDC.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_dspi.o ./drivers/fsl_dspi_freertos.o ./drivers/fsl_flash.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_i2c_freertos.o ./drivers/fsl_llwu.o ./drivers/fsl_lptmr.o ./drivers/fsl_lpuart.o ./drivers/fsl_lpuart_freertos.o ./drivers/fsl_ltc.o ./drivers/fsl_pmc.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_tpm.o ./drivers/fsl_trng.o ./drivers/fsl_tsi_v4.o  ./board/board.o ./board/clock_config.o ./board/gpio_pins.o ./board/pin_mux.o  ./CMSIS/system_MKW41Z4.o   -lm -lc -lgcc -lnosys -l_crypto_m0 -l802.15.4_mac_06_cm0
+Memory region         Used Size  Region Size  %age Used
+    TEXT_region1:         192 B         1 KB     18.75%
+m_flash_config_region:          16 B         16 B    100.00%
+    TEXT_region2:      128827 B     513006 B     25.11%
+      NVM_region:        8191 B       8191 B    100.00%
+    DATA1_region:          0 GB        32 KB      0.00%
+    DATA2_region:       20488 B        96 KB     20.84%
+PRODUCT_INFO_region:          0 GB       2047 B      0.00%
+Finished building target: frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf" "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.bin" ; # checksum -p MKW41Z512xxx4 -d "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 129008	   9759	  18928	 157695	  267ff	frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+ 
+23:28:39 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'App_TransmitUartData_ctr_t':
+../source/mwa_end_device.c:89:16: error: storage class specified for parameter 'AppPollWaitTimeout'
+   89 | static void    AppPollWaitTimeout(void *);
+      |                ^~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:90:16: error: storage class specified for parameter 'App_HandleKeys'
+   90 | static void    App_HandleKeys( key_event_t events );
+      |                ^~~~~~~~~~~~~~
+../source/mwa_end_device.c:92:16: error: storage class specified for parameter 'counter_timer'
+   92 | static uint8_t counter_timer = 0;
+      |                ^~~~~~~~~~~~~
+../source/mwa_end_device.c:92:1: error: parameter 'counter_timer' is initialized
+   92 | static uint8_t counter_timer = 0;
+      | ^~~~~~
+../source/mwa_end_device.c:97:6: error: redefinition of parameter 'SW3_pressed'
+   97 | void SW3_pressed (void);
+      |      ^~~~~~~~~~~
+../source/mwa_end_device.c:96:6: note: previous definition of 'SW3_pressed' was here
+   96 | void SW3_pressed (void);
+      |      ^~~~~~~~~~~
+../source/mwa_end_device.c:103:13: error: storage class specified for parameter 'Mac_SetExtendedAddress'
+  103 | extern void Mac_SetExtendedAddress(uint8_t *pAddr, instanceId_t instanceId);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:105:1: error: parameter 'appTimeoutMs_counter' is initialized
+  105 | uint16_t appTimeoutMs_counter = 2000;
+      | ^~~~~~~~
+../source/mwa_end_device.c:120:1: error: parameter 'os_thread_def_AppThread' is initialized
+  120 | OSA_TASK_DEFINE( AppThread, mAppTaskPrio_c, 1, mAppStackSize_c, FALSE );
+      | ^~~~~~~~~~~~~~~
+../source/mwa_end_device.c:121:1: error: parameter 'os_thread_def_AppLEDS' is initialized
+  121 | OSA_TASK_DEFINE( AppLEDS, mAppTaskPrio_c_LEDS, 1, mAppStackSize_c_LEDS, FALSE );
+      | ^~~~~~~~~~~~~~~
+../source/mwa_end_device.c:125:24: error: storage class specified for parameter 'mCoordInfo'
+  125 | static panDescriptor_t mCoordInfo;
+      |                        ^~~~~~~~~~
+../source/mwa_end_device.c:129:16: error: storage class specified for parameter 'maMyAddress'
+  129 | static uint8_t maMyAddress[8];
+      |                ^~~~~~~~~~~
+../source/mwa_end_device.c:133:23: error: storage class specified for parameter 'mAddrMode'
+  133 | static addrModeType_t mAddrMode;
+      |                       ^~~~~~~~~
+../source/mwa_end_device.c:136:28: error: storage class specified for parameter 'mpPacket'
+  136 | static nwkToMcpsMessage_t *mpPacket;
+      |                            ^~~~~~~~
+../source/mwa_end_device.c:139:16: error: storage class specified for parameter 'mMsduHandle'
+  139 | static uint8_t mMsduHandle;
+      |                ^~~~~~~~~~~
+../source/mwa_end_device.c:142:16: error: storage class specified for parameter 'mcPendingPackets'
+  142 | static uint8_t mcPendingPackets;
+      |                ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:146:15: error: storage class specified for parameter 'mWaitPollConfirm'
+  146 | static bool_t mWaitPollConfirm;
+      |               ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:149:17: error: storage class specified for parameter 'mPollInterval'
+  149 | static uint16_t mPollInterval;
+      |                 ^~~~~~~~~~~~~
+../source/mwa_end_device.c:152:17: error: storage class specified for parameter 'mMlmeNwkInputQueue'
+  152 | static anchor_t mMlmeNwkInputQueue;
+      |                 ^~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:153:17: error: storage class specified for parameter 'mMcpsNwkInputQueue'
+  153 | static anchor_t mMcpsNwkInputQueue;
+      |                 ^~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:155:21: error: storage class specified for parameter 'mTimer_c'
+  155 | static tmrTimerID_t mTimer_c = gTmrInvalidTimerID_c;
+      |                     ^~~~~~~~
+../source/mwa_end_device.c:155:1: error: parameter 'mTimer_c' is initialized
+  155 | static tmrTimerID_t mTimer_c = gTmrInvalidTimerID_c;
+      | ^~~~~~
+../source/mwa_end_device.c:157:23: error: storage class specified for parameter 'mExtendedAddress'
+  157 | static const uint64_t mExtendedAddress  = mMacExtendedAddress_c;
+      |                       ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:157:1: error: parameter 'mExtendedAddress' is initialized
+  157 | static const uint64_t mExtendedAddress  = mMacExtendedAddress_c;
+      | ^~~~~~
+../source/mwa_end_device.c:158:23: error: storage class specified for parameter 'macInstance'
+  158 | static instanceId_t   macInstance;
+      |                       ^~~~~~~~~~~
+../source/mwa_end_device.c:159:23: error: storage class specified for parameter 'interfaceId'
+  159 | static uint8_t        interfaceId;
+      |                       ^~~~~~~~~~~
+../source/mwa_end_device.c:165:21: error: storage class specified for parameter 'mTimer_c_counter'
+  165 | static tmrTimerID_t mTimer_c_counter;
+      |                     ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:169:17: error: storage class specified for parameter 'timeoutCounter'
+  169 | static uint16_t timeoutCounter = 0;
+      |                 ^~~~~~~~~~~~~~
+../source/mwa_end_device.c:169:1: error: parameter 'timeoutCounter' is initialized
+  169 | static uint16_t timeoutCounter = 0;
+      | ^~~~~~
+../source/mwa_end_device.c:176:1: error: parameter 'gNvmTableEntry_0x0010' is initialized
+  176 | NVM_RegisterDataSet(&mCoordInfo,          1,   sizeof(panDescriptor_t), mCoordInfo_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from ../source/mwa_end_device.c:35:
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:305:46: error: section attribute not allowed for 'gNvmTableEntry_0x0010'
+  305 |   #define SET_DATASET_STRUCT_NAME(datasetId) gNvmTableEntry##_##datasetId
+      |                                              ^~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:321:7: note: in expansion of macro 'SET_DATASET_STRUCT_NAME'
+  321 |       SET_DATASET_STRUCT_NAME(dataEntryID) \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:176:1: note: in expansion of macro 'NVM_RegisterDataSet'
+  176 | NVM_RegisterDataSet(&mCoordInfo,          1,   sizeof(panDescriptor_t), mCoordInfo_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:176:1: warning: 'used' attribute ignored [-Wattributes]
+../source/mwa_end_device.c:177:1: error: parameter 'gNvmTableEntry_0x0011' is initialized
+  177 | NVM_RegisterDataSet(&maMyAddress,         1,   8, maMyAddress_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from ../source/mwa_end_device.c:35:
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:305:46: error: section attribute not allowed for 'gNvmTableEntry_0x0011'
+  305 |   #define SET_DATASET_STRUCT_NAME(datasetId) gNvmTableEntry##_##datasetId
+      |                                              ^~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:321:7: note: in expansion of macro 'SET_DATASET_STRUCT_NAME'
+  321 |       SET_DATASET_STRUCT_NAME(dataEntryID) \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:177:1: note: in expansion of macro 'NVM_RegisterDataSet'
+  177 | NVM_RegisterDataSet(&maMyAddress,         1,   8, maMyAddress_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:177:1: warning: 'used' attribute ignored [-Wattributes]
+../source/mwa_end_device.c:178:1: error: parameter 'gNvmTableEntry_0x0012' is initialized
+  178 | NVM_RegisterDataSet(&mAddrMode,           1,   sizeof(addrModeType_t), mAddrMode_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+In file included from ../source/mwa_end_device.c:35:
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:305:46: error: section attribute not allowed for 'gNvmTableEntry_0x0012'
+  305 |   #define SET_DATASET_STRUCT_NAME(datasetId) gNvmTableEntry##_##datasetId
+      |                                              ^~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:321:7: note: in expansion of macro 'SET_DATASET_STRUCT_NAME'
+  321 |       SET_DATASET_STRUCT_NAME(dataEntryID) \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:178:1: note: in expansion of macro 'NVM_RegisterDataSet'
+  178 | NVM_RegisterDataSet(&mAddrMode,           1,   sizeof(addrModeType_t), mAddrMode_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:178:1: warning: 'used' attribute ignored [-Wattributes]
+../source/mwa_end_device.c:213:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  213 | {
+      | ^
+../source/mwa_end_device.c:270:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  270 | {
+      | ^
+../source/mwa_end_device.c:322:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  322 | {
+      | ^
+../source/mwa_end_device.c:387:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  387 | {
+      | ^
+../source/mwa_end_device.c:680:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  680 | {
+      | ^
+../source/mwa_end_device.c:693:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  693 | {
+      | ^
+../source/mwa_end_device.c:735:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  735 | {
+      | ^
+../source/mwa_end_device.c:771:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  771 | {
+      | ^
+../source/mwa_end_device.c:834:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  834 | {
+      | ^
+../source/mwa_end_device.c:900:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  900 | {
+      | ^
+../source/mwa_end_device.c:963:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  963 | {
+      | ^
+../source/mwa_end_device.c:999:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  999 | {
+      | ^
+../source/mwa_end_device.c:1057:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1057 | {
+      | ^
+../source/mwa_end_device.c:1095:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1095 | {
+      | ^
+../source/mwa_end_device.c:1125:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1125 | {
+      | ^
+../source/mwa_end_device.c:1207:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1207 | {
+      | ^
+../source/mwa_end_device.c:1250:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1250 | {
+      | ^
+../source/mwa_end_device.c:1295:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1295 | {
+      | ^
+../source/mwa_end_device.c:1303:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1303 | {
+      | ^
+../source/mwa_end_device.c:1311:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ 1311 | {
+      | ^
+../source/mwa_end_device.c:189:9: error: declaration for parameter 'gState' but no such parameter
+  189 | uint8_t gState;
+      |         ^~~~~~
+In file included from ../source/mwa_end_device.c:35:
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:305:46: error: declaration for parameter 'gNvmTableEntry_0x0012' but no such parameter
+  305 |   #define SET_DATASET_STRUCT_NAME(datasetId) gNvmTableEntry##_##datasetId
+      |                                              ^~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:321:7: note: in expansion of macro 'SET_DATASET_STRUCT_NAME'
+  321 |       SET_DATASET_STRUCT_NAME(dataEntryID) \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:178:1: note: in expansion of macro 'NVM_RegisterDataSet'
+  178 | NVM_RegisterDataSet(&mAddrMode,           1,   sizeof(addrModeType_t), mAddrMode_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:305:46: error: declaration for parameter 'gNvmTableEntry_0x0011' but no such parameter
+  305 |   #define SET_DATASET_STRUCT_NAME(datasetId) gNvmTableEntry##_##datasetId
+      |                                              ^~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:321:7: note: in expansion of macro 'SET_DATASET_STRUCT_NAME'
+  321 |       SET_DATASET_STRUCT_NAME(dataEntryID) \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:177:1: note: in expansion of macro 'NVM_RegisterDataSet'
+  177 | NVM_RegisterDataSet(&maMyAddress,         1,   8, maMyAddress_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:305:46: error: declaration for parameter 'gNvmTableEntry_0x0010' but no such parameter
+  305 |   #define SET_DATASET_STRUCT_NAME(datasetId) gNvmTableEntry##_##datasetId
+      |                                              ^~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface/NVM_Interface.h:321:7: note: in expansion of macro 'SET_DATASET_STRUCT_NAME'
+  321 |       SET_DATASET_STRUCT_NAME(dataEntryID) \
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:176:1: note: in expansion of macro 'NVM_RegisterDataSet'
+  176 | NVM_RegisterDataSet(&mCoordInfo,          1,   sizeof(panDescriptor_t), mCoordInfo_ID_c, gNVM_MirroredInRam_c);
+      | ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:169:17: error: declaration for parameter 'timeoutCounter' but no such parameter
+  169 | static uint16_t timeoutCounter = 0;
+      |                 ^~~~~~~~~~~~~~
+../source/mwa_end_device.c:165:21: error: declaration for parameter 'mTimer_c_counter' but no such parameter
+  165 | static tmrTimerID_t mTimer_c_counter;
+      |                     ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:164:23: error: declaration for parameter 'mAppHandler_LEDS' but no such parameter
+  164 | osaTaskId_t           mAppHandler_LEDS;
+      |                       ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:163:23: error: declaration for parameter 'mAppEvent_Switch' but no such parameter
+  163 | osaEventId_t          mAppEvent_Switch;
+      |                       ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:161:23: error: declaration for parameter 'mAppTaskHandler' but no such parameter
+  161 | osaTaskId_t           mAppTaskHandler;
+      |                       ^~~~~~~~~~~~~~~
+../source/mwa_end_device.c:160:23: error: declaration for parameter 'mAppEvent' but no such parameter
+  160 | osaEventId_t          mAppEvent;
+      |                       ^~~~~~~~~
+../source/mwa_end_device.c:159:23: error: declaration for parameter 'interfaceId' but no such parameter
+  159 | static uint8_t        interfaceId;
+      |                       ^~~~~~~~~~~
+../source/mwa_end_device.c:158:23: error: declaration for parameter 'macInstance' but no such parameter
+  158 | static instanceId_t   macInstance;
+      |                       ^~~~~~~~~~~
+../source/mwa_end_device.c:157:23: error: declaration for parameter 'mExtendedAddress' but no such parameter
+  157 | static const uint64_t mExtendedAddress  = mMacExtendedAddress_c;
+      |                       ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:155:21: error: declaration for parameter 'mTimer_c' but no such parameter
+  155 | static tmrTimerID_t mTimer_c = gTmrInvalidTimerID_c;
+      |                     ^~~~~~~~
+../source/mwa_end_device.c:153:17: error: declaration for parameter 'mMcpsNwkInputQueue' but no such parameter
+  153 | static anchor_t mMcpsNwkInputQueue;
+      |                 ^~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:152:17: error: declaration for parameter 'mMlmeNwkInputQueue' but no such parameter
+  152 | static anchor_t mMlmeNwkInputQueue;
+      |                 ^~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:149:17: error: declaration for parameter 'mPollInterval' but no such parameter
+  149 | static uint16_t mPollInterval;
+      |                 ^~~~~~~~~~~~~
+../source/mwa_end_device.c:146:15: error: declaration for parameter 'mWaitPollConfirm' but no such parameter
+  146 | static bool_t mWaitPollConfirm;
+      |               ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:142:16: error: declaration for parameter 'mcPendingPackets' but no such parameter
+  142 | static uint8_t mcPendingPackets;
+      |                ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:139:16: error: declaration for parameter 'mMsduHandle' but no such parameter
+  139 | static uint8_t mMsduHandle;
+      |                ^~~~~~~~~~~
+../source/mwa_end_device.c:136:28: error: declaration for parameter 'mpPacket' but no such parameter
+  136 | static nwkToMcpsMessage_t *mpPacket;
+      |                            ^~~~~~~~
+../source/mwa_end_device.c:133:23: error: declaration for parameter 'mAddrMode' but no such parameter
+  133 | static addrModeType_t mAddrMode;
+      |                       ^~~~~~~~~
+../source/mwa_end_device.c:129:16: error: declaration for parameter 'maMyAddress' but no such parameter
+  129 | static uint8_t maMyAddress[8];
+      |                ^~~~~~~~~~~
+../source/mwa_end_device.c:125:24: error: declaration for parameter 'mCoordInfo' but no such parameter
+  125 | static panDescriptor_t mCoordInfo;
+      |                        ^~~~~~~~~~
+In file included from ../source/mwa_end_device.c:44:
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface/fsl_os_abstraction.h:176:16: error: declaration for parameter 'os_thread_def_AppLEDS' but no such parameter
+  176 | osaThreadDef_t os_thread_def_##name = { (name), \
+      |                ^~~~~~~~~~~~~~
+../source/mwa_end_device.c:121:1: note: in expansion of macro 'OSA_TASK_DEFINE'
+  121 | OSA_TASK_DEFINE( AppLEDS, mAppTaskPrio_c_LEDS, 1, mAppStackSize_c_LEDS, FALSE );
+      | ^~~~~~~~~~~~~~~
+D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface/fsl_os_abstraction.h:176:16: error: declaration for parameter 'os_thread_def_AppThread' but no such parameter
+  176 | osaThreadDef_t os_thread_def_##name = { (name), \
+      |                ^~~~~~~~~~~~~~
+../source/mwa_end_device.c:120:1: note: in expansion of macro 'OSA_TASK_DEFINE'
+  120 | OSA_TASK_DEFINE( AppThread, mAppTaskPrio_c, 1, mAppStackSize_c, FALSE );
+      | ^~~~~~~~~~~~~~~
+../source/mwa_end_device.c:105:10: error: declaration for parameter 'appTimeoutMs_counter' but no such parameter
+  105 | uint16_t appTimeoutMs_counter = 2000;
+      |          ^~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:103:13: error: declaration for parameter 'Mac_SetExtendedAddress' but no such parameter
+  103 | extern void Mac_SetExtendedAddress(uint8_t *pAddr, instanceId_t instanceId);
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:102:14: error: declaration for parameter 'MCPS_NWK_SapHandler' but no such parameter
+  102 | resultType_t MCPS_NWK_SapHandler (mcpsToNwkMessage_t* pMsg, instanceId_t instanceId);
+      |              ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:101:14: error: declaration for parameter 'MLME_NWK_SapHandler' but no such parameter
+  101 | resultType_t MLME_NWK_SapHandler (nwkMessage_t* pMsg, instanceId_t instanceId);
+      |              ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:100:6: error: declaration for parameter 'App_Idle_Task' but no such parameter
+  100 | void App_Idle_Task(uint32_t argument);
+      |      ^~~~~~~~~~~~~
+../source/mwa_end_device.c:99:6: error: declaration for parameter 'counter_increase' but no such parameter
+   99 | void counter_increase (void *pData);
+      |      ^~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:98:6: error: declaration for parameter 'AppLEDS' but no such parameter
+   98 | void AppLEDS (void *pData);
+      |      ^~~~~~~
+../source/mwa_end_device.c:97:6: error: declaration for parameter 'SW3_pressed' but no such parameter
+   97 | void SW3_pressed (void);
+      |      ^~~~~~~~~~~
+../source/mwa_end_device.c:96:6: error: declaration for parameter 'SW3_pressed' but no such parameter
+   96 | void SW3_pressed (void);
+      |      ^~~~~~~~~~~
+../source/mwa_end_device.c:95:6: error: declaration for parameter 'AppThread' but no such parameter
+   95 | void AppThread (osaTaskParam_t argument);
+      |      ^~~~~~~~~
+../source/mwa_end_device.c:94:6: error: declaration for parameter 'App_init' but no such parameter
+   94 | void App_init( void );
+      |      ^~~~~~~~
+../source/mwa_end_device.c:92:16: error: declaration for parameter 'counter_timer' but no such parameter
+   92 | static uint8_t counter_timer = 0;
+      |                ^~~~~~~~~~~~~
+../source/mwa_end_device.c:90:16: error: declaration for parameter 'App_HandleKeys' but no such parameter
+   90 | static void    App_HandleKeys( key_event_t events );
+      |                ^~~~~~~~~~~~~~
+../source/mwa_end_device.c:89:16: error: declaration for parameter 'AppPollWaitTimeout' but no such parameter
+   89 | static void    AppPollWaitTimeout(void *);
+      |                ^~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:1361: error: expected '{' at end of input
+../source/mwa_end_device.c: At top level:
+../source/mwa_end_device.c:79:16: warning: 'UartRxCallBack' declared 'static' but never defined [-Wunused-function]
+   79 | static void    UartRxCallBack(void*);
+      |                ^~~~~~~~~~~~~~
+../source/mwa_end_device.c:80:16: warning: 'App_StartScan' declared 'static' but never defined [-Wunused-function]
+   80 | static uint8_t App_StartScan(macScanType_t scanType);
+      |                ^~~~~~~~~~~~~
+../source/mwa_end_device.c:81:16: warning: 'App_HandleScanActiveConfirm' declared 'static' but never defined [-Wunused-function]
+   81 | static uint8_t App_HandleScanActiveConfirm(nwkMessage_t *pMsg);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:82:16: warning: 'App_WaitMsg' declared 'static' but never defined [-Wunused-function]
+   82 | static uint8_t App_WaitMsg(nwkMessage_t *pMsg, uint8_t msgType);
+      |                ^~~~~~~~~~~
+../source/mwa_end_device.c:83:16: warning: 'App_SendAssociateRequest' declared 'static' but never defined [-Wunused-function]
+   83 | static uint8_t App_SendAssociateRequest(void);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:84:16: warning: 'App_HandleAssociateConfirm' declared 'static' but never defined [-Wunused-function]
+   84 | static uint8_t App_HandleAssociateConfirm(nwkMessage_t *pMsg);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:85:16: warning: 'App_HandleMlmeInput' declared 'static' but never defined [-Wunused-function]
+   85 | static uint8_t App_HandleMlmeInput(nwkMessage_t *pMsg);
+      |                ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:86:16: warning: 'App_HandleMcpsInput' declared 'static' but never defined [-Wunused-function]
+   86 | static void    App_HandleMcpsInput(mcpsToNwkMessage_t *pMsgIn);
+      |                ^~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:87:16: warning: 'App_TransmitUartData' declared 'static' but never defined [-Wunused-function]
+   87 | static void    App_TransmitUartData(void);
+      |                ^~~~~~~~~~~~~~~~~~~~
+make[1]: *** [source/subdir.mk:26: source/mwa_end_device.o] Error 1
+make: *** [makefile:70: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+23:28:46 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'AppThread':
+../source/mwa_end_device.c:451:51: warning: unsigned conversion from 'int' to 'pibId_t' {aka 'unsigned char'} changes value from '257' to '1' [-Woverflow]
+  451 |                 msg.msgData.setReq.pibAttribute = gMPibPanId_c;
+      |                                                   ^~~~~~~~~~~~
+../source/mwa_end_device.c: In function 'App_TransmitUartData_ctr_t':
+../source/mwa_end_device.c:1324:5: error: 'counter' undeclared (first use in this function)
+ 1324 |     counter+='0';
+      |     ^~~~~~~
+../source/mwa_end_device.c:1324:5: note: each undeclared identifier is reported only once for each function it appears in
+../source/mwa_end_device.c:1325:21: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+ 1325 |     strcat(message, &counter_timer);
+      |                     ^~~~~~~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers/fsl_common.h:37,
+                 from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers/fsl_gpio.h:34,
+                 from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board/board.h:12,
+                 from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface/LED.h:17,
+                 from ../source/mwa_end_device.c:20:
+d:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\redlib\include\string.h:42:43: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   42 |                     const char * restrict __s2);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~^~~~
+make[1]: *** [source/subdir.mk:26: source/mwa_end_device.o] Error 1
+make: *** [makefile:70: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+23:29:06 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'AppThread':
+../source/mwa_end_device.c:451:51: warning: unsigned conversion from 'int' to 'pibId_t' {aka 'unsigned char'} changes value from '257' to '1' [-Woverflow]
+  451 |                 msg.msgData.setReq.pibAttribute = gMPibPanId_c;
+      |                                                   ^~~~~~~~~~~~
+../source/mwa_end_device.c: In function 'App_TransmitUartData_ctr_t':
+../source/mwa_end_device.c:1325:21: warning: pointer targets in passing argument 2 of 'strcat' differ in signedness [-Wpointer-sign]
+ 1325 |     strcat(message, &counter_timer);
+      |                     ^~~~~~~~~~~~~~
+      |                     |
+      |                     uint8_t * {aka unsigned char *}
+In file included from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers/fsl_common.h:37,
+                 from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers/fsl_gpio.h:34,
+                 from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board/board.h:12,
+                 from D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface/LED.h:17,
+                 from ../source/mwa_end_device.c:20:
+d:\nxp\mcuxpressoide_11.6.0_8187\ide\plugins\com.nxp.mcuxpresso.tools.win32_11.6.0.202112161359\tools\redlib\include\string.h:42:43: note: expected 'const char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   42 |                     const char * restrict __s2);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~^~~~
+Finished building: ../source/mwa_end_device.c
+ 
+Building target: frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -L"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\libs" -Xlinker -Map="frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T MKW41Z512xxx4_connectivity.ld -L ../source -o "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf" ./utilities/fsl_debug_console.o  ./startup/startup_MKW41Z4.o  ./source/mtb.o ./source/mwa_end_device.o ./source/semihost_hardfault.o  ./ieee_802.15.4/phy/source/MKW41Z/ASP.o ./ieee_802.15.4/phy/source/MKW41Z/MPM.o ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o  ./ieee_802.15.4/mac/source/App/FsciAspCommands.o ./ieee_802.15.4/mac/source/App/FsciMacCommands.o ./ieee_802.15.4/mac/source/App/MacGlobals.o  ./freertos/croutine.o ./freertos/event_groups.o ./freertos/fsl_tickless_lptmr.o ./freertos/fsl_tickless_systick.o ./freertos/heap_4.o ./freertos/list.o ./freertos/port.o ./freertos/queue.o ./freertos/tasks.o ./freertos/timers.o  ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ant_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ble_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_common_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p3_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p32_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p7_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_1p0_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p7_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_mode_datarate_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_msk_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_zgbe_config.o  ./framework/XCVR/MKW41Z4/dbg_ram_capture.o ./framework/XCVR/MKW41Z4/fsl_xcvr.o ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o ./framework/XCVR/MKW41Z4/ifr_radio.o  ./framework/TimersManager/Source/TMR_Adapter.o ./framework/TimersManager/Source/TimersManager.o  ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o  ./framework/SerialManager/Source/SPI_Adapter/SPI_Adapter.o  ./framework/SerialManager/Source/I2C_Adapter/I2C_Adapter.o  ./framework/SerialManager/Source/SerialManager.o  ./framework/SecLib/SecLib.o  ./framework/Reset/Reset.o  ./framework/RNG/Source/RNG.o  ./framework/Panic/Source/Panic.o  ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o  ./framework/NVM/Source/NV_Flash.o ./framework/NVM/Source/NV_FsciCommands.o  ./framework/ModuleInfo/ModuleInfo.o  ./framework/Messaging/Source/Messaging.o  ./framework/MemManager/Source/MemManager.o  ./framework/MWSCoexistence/Source/MWS.o  ./framework/LowPower/Source/MKW41Z/PWR.o ./framework/LowPower/Source/MKW41Z/PWRLib.o  ./framework/Lists/GenericList.o  ./framework/LED/Source/LED.o  ./framework/Keyboard/Source/Keyboard.o  ./framework/GPIO/GPIO_Adapter.o  ./framework/FunctionLib/FunctionLib.o  ./framework/Flash/Internal/Flash_Adapter.o  ./framework/DCDC/Source/DCDC.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_dspi.o ./drivers/fsl_dspi_freertos.o ./drivers/fsl_flash.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_i2c_freertos.o ./drivers/fsl_llwu.o ./drivers/fsl_lptmr.o ./drivers/fsl_lpuart.o ./drivers/fsl_lpuart_freertos.o ./drivers/fsl_ltc.o ./drivers/fsl_pmc.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_tpm.o ./drivers/fsl_trng.o ./drivers/fsl_tsi_v4.o  ./board/board.o ./board/clock_config.o ./board/gpio_pins.o ./board/pin_mux.o  ./CMSIS/system_MKW41Z4.o   -lm -lc -lgcc -lnosys -l_crypto_m0 -l802.15.4_mac_06_cm0
+Memory region         Used Size  Region Size  %age Used
+    TEXT_region1:         192 B         1 KB     18.75%
+m_flash_config_region:          16 B         16 B    100.00%
+    TEXT_region2:      128819 B     513006 B     25.11%
+      NVM_region:        8191 B       8191 B    100.00%
+    DATA1_region:          0 GB        32 KB      0.00%
+    DATA2_region:       20488 B        96 KB     20.84%
+PRODUCT_INFO_region:          0 GB       2047 B      0.00%
+Finished building target: frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf" "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.bin" ; # checksum -p MKW41Z512xxx4 -d "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 129000	   9759	  18928	 157687	  267f7	frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+ 
+23:30:36 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'AppThread':
+../source/mwa_end_device.c:451:51: warning: unsigned conversion from 'int' to 'pibId_t' {aka 'unsigned char'} changes value from '257' to '1' [-Woverflow]
+  451 |                 msg.msgData.setReq.pibAttribute = gMPibPanId_c;
+      |                                                   ^~~~~~~~~~~~
+../source/mwa_end_device.c: At top level:
+../source/mwa_end_device.c:1310:6: error: conflicting types for 'App_TransmitUartData_ctr_t'
+ 1310 | void App_TransmitUartData_ctr_t (char counter_timer)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../source/mwa_end_device.c:88:6: note: previous declaration of 'App_TransmitUartData_ctr_t' was here
+   88 | void App_TransmitUartData_ctr_t (uint8_t counter_timer);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [source/subdir.mk:26: source/mwa_end_device.o] Error 1
+make: *** [makefile:70: all] Error 2
+"make -r -j8 all" terminated with exit code 2. Build might be incomplete.
+23:31:00 **** Incremental Build of configuration Debug for project frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos ****
+make -r -j8 all 
+Building file: ../source/mwa_end_device.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -std=gnu99 -D__REDLIB__ -DCPU_MKW41Z512VHT4 -DCPU_MKW41Z512VHT4_cm0plus -DFSL_RTOS_FREE_RTOS -DFRDM_KW41Z -DFREEDOM -DSDK_DEBUGCONSOLE=1 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\OSAbstraction\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\freertos" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\source\App" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\mac\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\GPIO" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Keyboard\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LED\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\SPI_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\UART_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Source\I2C_Adapter" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Flash\Internal" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\common" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MemManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Messaging\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Panic\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\RNG\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SerialManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\TimersManager\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\ModuleInfo" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\FunctionLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\Lists" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\SecLib" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\NVM\Source" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Interface\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\LowPower\Source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\MWSCoexistence\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\drivers" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\DCDC\Interface" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\framework\XCVR\MKW41Z4" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\ieee_802.15.4\phy\source\MKW41Z" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\CMSIS" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\utilities" -I"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\board" -O0 -fno-common -g -Wall -c  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin -imacros "D:/nxp/RSE/end_device_154/frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos/source/app_preinclude.h" -fmerge-constants -fmacro-prefix-map="../source/"= -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"source/mwa_end_device.d" -MT"source/mwa_end_device.o" -MT"source/mwa_end_device.d" -o "source/mwa_end_device.o" "../source/mwa_end_device.c"
+../source/mwa_end_device.c: In function 'AppThread':
+../source/mwa_end_device.c:451:51: warning: unsigned conversion from 'int' to 'pibId_t' {aka 'unsigned char'} changes value from '257' to '1' [-Woverflow]
+  451 |                 msg.msgData.setReq.pibAttribute = gMPibPanId_c;
+      |                                                   ^~~~~~~~~~~~
+Finished building: ../source/mwa_end_device.c
+ 
+Building target: frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -L"D:\nxp\RSE\end_device_154\frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos\libs" -Xlinker -Map="frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T MKW41Z512xxx4_connectivity.ld -L ../source -o "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf" ./utilities/fsl_debug_console.o  ./startup/startup_MKW41Z4.o  ./source/mtb.o ./source/mwa_end_device.o ./source/semihost_hardfault.o  ./ieee_802.15.4/phy/source/MKW41Z/ASP.o ./ieee_802.15.4/phy/source/MKW41Z/MPM.o ./ieee_802.15.4/phy/source/MKW41Z/PhyISR.o ./ieee_802.15.4/phy/source/MKW41Z/PhyPacketProcessor.o ./ieee_802.15.4/phy/source/MKW41Z/PhyPlmeData.o ./ieee_802.15.4/phy/source/MKW41Z/PhyStateMachine.o ./ieee_802.15.4/phy/source/MKW41Z/PhyTime.o  ./ieee_802.15.4/mac/source/App/FsciAspCommands.o ./ieee_802.15.4/mac/source/App/FsciMacCommands.o ./ieee_802.15.4/mac/source/App/MacGlobals.o  ./freertos/croutine.o ./freertos/event_groups.o ./freertos/fsl_tickless_lptmr.o ./freertos/fsl_tickless_systick.o ./freertos/heap_4.o ./freertos/list.o ./freertos/port.o ./freertos/queue.o ./freertos/tasks.o ./freertos/timers.o  ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ant_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_ble_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_common_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p3_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p32_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_0p7_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p5_h_1p0_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_gfsk_bt_0p7_h_0p5_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_mode_datarate_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_msk_config.o ./framework/XCVR/MKW41Z4/cfgs_kw4x_3x_2x/fsl_xcvr_zgbe_config.o  ./framework/XCVR/MKW41Z4/dbg_ram_capture.o ./framework/XCVR/MKW41Z4/fsl_xcvr.o ./framework/XCVR/MKW41Z4/fsl_xcvr_trim.o ./framework/XCVR/MKW41Z4/ifr_radio.o  ./framework/TimersManager/Source/TMR_Adapter.o ./framework/TimersManager/Source/TimersManager.o  ./framework/SerialManager/Source/UART_Adapter/UART_Adapter.o  ./framework/SerialManager/Source/SPI_Adapter/SPI_Adapter.o  ./framework/SerialManager/Source/I2C_Adapter/I2C_Adapter.o  ./framework/SerialManager/Source/SerialManager.o  ./framework/SecLib/SecLib.o  ./framework/Reset/Reset.o  ./framework/RNG/Source/RNG.o  ./framework/Panic/Source/Panic.o  ./framework/OSAbstraction/Source/fsl_os_abstraction_free_rtos.o  ./framework/NVM/Source/NV_Flash.o ./framework/NVM/Source/NV_FsciCommands.o  ./framework/ModuleInfo/ModuleInfo.o  ./framework/Messaging/Source/Messaging.o  ./framework/MemManager/Source/MemManager.o  ./framework/MWSCoexistence/Source/MWS.o  ./framework/LowPower/Source/MKW41Z/PWR.o ./framework/LowPower/Source/MKW41Z/PWRLib.o  ./framework/Lists/GenericList.o  ./framework/LED/Source/LED.o  ./framework/Keyboard/Source/Keyboard.o  ./framework/GPIO/GPIO_Adapter.o  ./framework/FunctionLib/FunctionLib.o  ./framework/Flash/Internal/Flash_Adapter.o  ./framework/DCDC/Source/DCDC.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_common.o ./drivers/fsl_dspi.o ./drivers/fsl_dspi_freertos.o ./drivers/fsl_flash.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_i2c_freertos.o ./drivers/fsl_llwu.o ./drivers/fsl_lptmr.o ./drivers/fsl_lpuart.o ./drivers/fsl_lpuart_freertos.o ./drivers/fsl_ltc.o ./drivers/fsl_pmc.o ./drivers/fsl_rtc.o ./drivers/fsl_smc.o ./drivers/fsl_tpm.o ./drivers/fsl_trng.o ./drivers/fsl_tsi_v4.o  ./board/board.o ./board/clock_config.o ./board/gpio_pins.o ./board/pin_mux.o  ./CMSIS/system_MKW41Z4.o   -lm -lc -lgcc -lnosys -l_crypto_m0 -l802.15.4_mac_06_cm0
+Memory region         Used Size  Region Size  %age Used
+    TEXT_region1:         192 B         1 KB     18.75%
+m_flash_config_region:          16 B         16 B    100.00%
+    TEXT_region2:      128819 B     513006 B     25.11%
+      NVM_region:        8191 B       8191 B    100.00%
+    DATA1_region:          0 GB        32 KB      0.00%
+    DATA2_region:       20488 B        96 KB     20.84%
+PRODUCT_INFO_region:          0 GB       2047 B      0.00%
+Finished building target: frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+ 
+Performing post-build steps
+arm-none-eabi-size "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf"; # arm-none-eabi-objcopy -v -O binary "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf" "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.bin" ; # checksum -p MKW41Z512xxx4 -d "frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.bin";
+   text	   data	    bss	    dec	    hex	filename
+ 129000	   9759	  18928	 157687	  267f7	frdmkw41z_wireless_examples_ieee_802_15_4_mwa_end_device_freertos.axf
+ 
