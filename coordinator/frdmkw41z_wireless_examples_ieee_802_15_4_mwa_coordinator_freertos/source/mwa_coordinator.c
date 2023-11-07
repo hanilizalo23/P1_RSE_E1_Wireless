@@ -36,7 +36,7 @@
 /* KSDK */
 #include "board.h"
 #include "fsl_os_abstraction.h"
-
+#include <stdbool.h>
 /************************************************************************************
 *************************************************************************************
 * Private macros
@@ -72,7 +72,7 @@ void AppThread (uint32_t argument);
 resultType_t MLME_NWK_SapHandler (nwkMessage_t* pMsg, instanceId_t instanceId);
 resultType_t MCPS_NWK_SapHandler (mcpsToNwkMessage_t* pMsg, instanceId_t instanceId);
 extern void Mac_SetExtendedAddress(uint8_t *pAddr, instanceId_t instanceId);
-
+void App_TransmitUartData_ctr_t (void);
 /************************************************************************************
 *************************************************************************************
 * Private type definitions
@@ -145,6 +145,16 @@ uint8_t gState;
 * \remarks
 *
 ********************************************************************************** */
+
+typedef struct  devices{
+	uint16_t shortAddress;
+	uint8_t deviceType;
+	uint64_t extendedAddress;
+	uint8_t rxOnIdle;
+}node;
+
+
+
 void main_task(uint32_t param)
 {
     static uint8_t initialized = FALSE;
@@ -711,7 +721,8 @@ static uint8_t App_SendAssociateResponse(nwkMessage_t *pMsgIn, uint8_t appInstan
 {
   mlmeMessage_t *pMsg;
   mlmeAssociateRes_t *pAssocRes;
- 
+  static node miDispositivo[5];
+  static uint8_t nextIndex = 0;
   Serial_Print(interfaceId,"Sending the MLME-Associate Response message to the MAC...", gAllowToBlock_d);
  
   /* Allocate a message for the MLME */
@@ -729,17 +740,51 @@ static uint8_t App_SendAssociateResponse(nwkMessage_t *pMsgIn, uint8_t appInstan
        different short addresses. However, if a device do not want to use
        short addresses at all in the PAN, a short address of 0xFFFE must
        be assigned to it. */
-    if(pMsgIn->msgData.associateInd.capabilityInfo & gCapInfoAllocAddr_c)
-    {
-      /* Assign a unique short address less than 0xfffe if the device requests so. */
-      pAssocRes->assocShortAddress = 0x0001;
+
+
+
+    uint8_t findFlag=0;
+    uint8_t findIndex=0;
+    for(int i=0;i<5; i ++){
+    	if(miDispositivo[i].extendedAddress == pMsgIn->msgData.associateInd.deviceAddress){
+    		findFlag=1;
+    		findIndex=i;
+    		break;
+    	}
+    	else{
+    		findFlag=0;
+    		findIndex=nextIndex;
+    	}
     }
-    else
-    {
-      /* A short address of 0xfffe means that the device is granted access to
-         the PAN (Associate successful) but that long addressing is used.*/
-      pAssocRes->assocShortAddress = 0xFFFE;
+
+    if(!findFlag){
+
+		if(pMsgIn->msgData.associateInd.capabilityInfo & gCapInfoAllocAddr_c)
+		{
+		  /* Assign a unique short address less than 0xfffe if the device requests so. */
+		  pAssocRes->assocShortAddress = findIndex + 1;
+		  miDispositivo[findIndex].rxOnIdle =pMsgIn->msgData.associateInd.capabilityInfo;
+		  miDispositivo[findIndex].shortAddress = pAssocRes->assocShortAddress;
+		  miDispositivo[findIndex].extendedAddress = pMsgIn->msgData.associateInd.deviceAddress;
+		  miDispositivo[findIndex].deviceType = 1; // ffd
+		  findFlag=0;
+		  nextIndex++;
+		}
+		else {
+		  /* A short address of 0xfffe means that the device is granted access to
+			 the PAN (Associate successful) but that long addressing is used.*/
+		  pAssocRes->assocShortAddress = 0xFFFE;
+		  findFlag=0;
+		}
+
     }
+    else{
+    	findFlag=0;
+    	 pAssocRes->assocShortAddress = miDispositivo[findIndex].shortAddress;
+
+    }
+
+
     /* Get the 64 bit address of the device requesting association. */
     FLib_MemCpy(&pAssocRes->deviceAddress, &pMsgIn->msgData.associateInd.deviceAddress, 8);
     /* Association granted. May also be gPanAtCapacity_c or gPanAccessDenied_c. */
@@ -751,6 +796,10 @@ static uint8_t App_SendAssociateResponse(nwkMessage_t *pMsgIn, uint8_t appInstan
     FLib_MemCpy(&mDeviceShortAddress, &pAssocRes->assocShortAddress, 2);
     FLib_MemCpy(&mDeviceLongAddress,  &pAssocRes->deviceAddress,     8);
     
+
+
+
+
     /* Send the Associate Response to the MLME. */
     if( gSuccess_c == NWK_MLME_SapHandler( pMsg, macInstance ) )
     {
@@ -1007,6 +1056,7 @@ static void    checkvalue(mcpsToNwkMessage_t *pMsgIn){ // check the value in RX 
 	Serial_Print(interfaceId,"- Address source 0x", gAllowToBlock_d);   Serial_PrintHex(interfaceId, &pMsgIn->msgData.dataInd.srcAddr,0x2, gPrtHexNoFormat_c);
 	Serial_Print(interfaceId,"- LQI: 0x", gAllowToBlock_d);   Serial_PrintHex(interfaceId, &pMsgIn->msgData.dataInd.mpduLinkQuality,0x1, gPrtHexNoFormat_c);
 	Serial_Print(interfaceId,"- Payload size: ", gAllowToBlock_d);   Serial_PrintHex(interfaceId, &pMsgIn->msgData.dataInd.msduLength,0x1, gPrtHexNoFormat_c);
+
 	uint8_t var= *(pMsgIn->msgData.dataInd.pMsdu + 2);
 	char miChar= (char )(var);
 	uint8_t miEntero = miChar - '0';  //use to get int value equivalent of ascii
@@ -1037,4 +1087,59 @@ static void    checkvalue(mcpsToNwkMessage_t *pMsgIn){ // check the value in RX 
 		TurnOffLeds();
 		TurnOnLeds();
 	}
+}
+
+
+
+
+//--------------------------------------------------------------------------------------------
+void App_TransmitUartData_ctr_t (void)
+{
+    /* Use multi buffering for increased TX performance. It does not really
+    have any effect at low UART baud rates, but serves as an
+    example of how the throughput may be improved in a real-world
+    application where the data rate is of concern. */
+    if( (mcPendingPackets < mDefaultValueOfMaxPendingDataPackets_c) && (mpPacket == NULL) )
+    {
+        /* If the maximum number of pending data buffes is below maximum limit
+        and we do not have a data buffer already then allocate one. */
+        mpPacket = MSG_Alloc(sizeof(nwkToMcpsMessage_t) + gMaxPHYPacketSize_c);
+    }
+
+    char message[7] = "ACK_APP";
+    if(mpPacket != NULL)
+    {
+        /* Data is available in the SerialManager's receive buffer. Now create an
+        MCPS-Data Request message containing the data. */
+        mpPacket->msgType = gMcpsDataReq_c;
+        mpPacket->msgData.dataReq.pMsdu = (uint8_t*)(&mpPacket->msgData.dataReq.pMsdu) +
+                                          sizeof(mpPacket->msgData.dataReq.pMsdu);
+        mpPacket->msgData.dataReq.pMsdu = (uint8_t*)message;
+        /* Create the header using coordinator information gained during
+        the scan procedure. Also use the short address we were assigned
+        by the coordinator during association. */
+        FLib_MemCpy(&mpPacket->msgData.dataReq.dstAddr, (void*)&mDeviceShortAddress, 2);
+        FLib_MemCpy(&mpPacket->msgData.dataReq.srcAddr, (void*)&mShortAddress, 2);
+        FLib_MemCpy(&mpPacket->msgData.dataReq.dstPanId, (void*)&mPanId, 2);
+        FLib_MemCpy(&mpPacket->msgData.dataReq.srcPanId, (void*)&mPanId, 2);
+        mpPacket->msgData.dataReq.dstAddrMode = gAddrModeShortAddress_c;
+        mpPacket->msgData.dataReq.srcAddrMode = gAddrModeShortAddress_c;
+        mpPacket->msgData.dataReq.msduLength = 7; //dataLenght
+        /* Request MAC level acknowledgement of the data packet */
+        mpPacket->msgData.dataReq.txOptions = gMacTxOptionsAck_c;
+        /* Give the data packet a handle. The handle is
+        returned in the MCPS-Data Confirm message. */
+        mpPacket->msgData.dataReq.msduHandle = mMsduHandle++;
+        /* Don't use security */
+        mpPacket->msgData.dataReq.securityLevel = gMacSecurityNone_c;
+
+        /* Send the Data Request to the MCPS */
+        (void)NWK_MCPS_SapHandler(mpPacket, macInstance);
+
+        /* Prepare for another data buffer */
+        mpPacket = NULL;
+        mcPendingPackets++;
+
+
+    }
 }
